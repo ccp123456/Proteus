@@ -367,7 +367,7 @@ def main(i, flow_dict):
 
 if __name__ == '__main__':
     for i in range(0, 1):
-        with open('./flows_%d_fold_cut.pkl' % i, 'rb') as f:
+        with open('./Deemo.pkl', 'rb') as f:
             flow_dict = pickle.load(f)
         print('====', i, ' fold validation ====')
         main(i, flow_dict)
